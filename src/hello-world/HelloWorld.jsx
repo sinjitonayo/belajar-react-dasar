@@ -1,13 +1,7 @@
+import "./HelloWorld.css";
+
 export function HeaderHelloWorld({ text = "Hello World!" }) {
-  return (
-    <h1
-      style={{
-        color: "blue",
-      }}
-    >
-      {text.toUpperCase()}
-    </h1>
-  );
+  return <h1 className="title">{text.toUpperCase()}</h1>;
 }
 
 export function ParagraphHelloWorld() {
