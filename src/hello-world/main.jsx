@@ -1,10 +1,9 @@
 import { createRoot } from "react-dom/client";
-import { HeaderHelloWorld, ParagraphHelloWorld } from "./HelloWorld";
 import { StrictMode } from "react";
+import HelloWorld from "./HelloWorld";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HeaderHelloWorld />
-    <ParagraphHelloWorld />
+    <HelloWorld />
   </StrictMode>
 );
