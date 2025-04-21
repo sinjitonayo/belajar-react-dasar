@@ -4,13 +4,15 @@ import HelloWorld from "./HelloWorld";
 import Container from "./Container";
 import TodoList from "../todolist/TodoList";
 import AlertButton from "../button/AlertButton";
+import MyButton from "../button/MyButton";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Container>
       <HelloWorld />
       <TodoList />
-      <AlertButton text="Click me!" />
+      <AlertButton text="Click me!" message={"Whatsapp"} />
+      <MyButton text="Smash!" onSmash={() => alert("Smash!")} />
     </Container>
   </StrictMode>
 );
