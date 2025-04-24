@@ -6,6 +6,8 @@ import TodoList from "../todolist/TodoList";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
 import Toolbar from "../button/Toolbar";
+import SearchForm from "../form/SearchForm";
+import Counter from "../form/Counter";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,6 +19,8 @@ createRoot(document.getElementById("root")).render(
       <Toolbar
         onClick={(e) => e.stopPropagation() || alert("Toolbar button clicked!")}
       ></Toolbar>
+      <SearchForm />
+      <Counter />
     </Container>
   </StrictMode>
 );
