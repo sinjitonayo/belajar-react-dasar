@@ -12,7 +12,12 @@ export default function CounterApp() {
   return (
     <div>
       <h1>Counter App</h1>
-      {show2 ? <Counter name={"Tanaka"} /> : <Counter name={"Yamada"} />}
+      {/* {show2 ? <Counter name={"Tanaka"} /> : <p>Missing</p>} */}
+      {show2 ? (
+        <Counter key={"tanaka"} name={"Tanaka"} />
+      ) : (
+        <Counter key={"yamada"} name={"Yamada"} />
+      )}
       <label>
         <input type="checkbox" checked={show2} onChange={handleChange} />
         Show second counter
