@@ -5,6 +5,7 @@ import Container from "./Container";
 import TodoList from "../todolist/TodoList";
 import AlertButton from "../button/AlertButton";
 import MyButton from "../button/MyButton";
+import Toolbar from "../button/Toolbar";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,6 +14,9 @@ createRoot(document.getElementById("root")).render(
       <TodoList />
       <AlertButton text="Click me!" message={"Whatsapp"} />
       <MyButton text="Smash!" onSmash={() => alert("Smash!")} />
+      <Toolbar
+        onClick={(e) => e.stopPropagation() || alert("Toolbar button clicked!")}
+      ></Toolbar>
     </Container>
   </StrictMode>
 );
