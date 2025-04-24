@@ -1,7 +1,8 @@
 export default function Toolbar({ onClick }) {
   return (
-    <div>
+    <div onClick={onClick}>
       <button onClick={onClick}>Toolbar Button</button>
+      <button onClick={onClick}>Toolbar Button 2</button>
     </div>
   );
 }
